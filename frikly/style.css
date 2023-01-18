@@ -1,0 +1,511 @@
+/*************************
+common css
+**************************/
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background: #E67136;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 6% auto;
+    box-shadow: -30px 20px 30px rgba(0, 0, 0, 0.25);
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.row {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containar {
+    display: flex;
+}
+
+.grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin: 3% auto;
+}
+
+/*******/
+/*************************
+header_area
+**************************/
+.logo_area {
+    width: 100%;
+}
+
+.logo_area img {
+    display: block;
+    width: 25%;
+    margin: 2% auto;
+}
+
+.benner_area {
+    background: url(img/bennar.png);
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.benner_text {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.benner_text h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.benner_text h1 span {
+    color: #E67136;
+}
+
+/*************************
+show_area
+**************************/
+
+.show {
+    width: 100%;
+    background: #F5F4F4;
+    padding-bottom: 10%;
+}
+
+.show_text {
+    width: 30%;
+    margin: auto 10%;
+    text-align: center;
+}
+
+.show_img {
+    width: 30%;
+    margin: auto 10%;
+}
+
+.show_img img {
+    width: 100%;
+}
+
+.show_text h1 {
+    font-size: 30px;
+    color: #E67136;
+}
+
+.show_text h3 {
+    font-size: 20px;
+}
+
+.show_text p {
+    font-size: 18px;
+}
+
+/*************************
+offer_area
+**************************/
+.offer_area {
+    width: 100%;
+    text-align: center;
+}
+
+.offer_text h1,
+.reward2_text h1,
+.tool_text h1 {
+    color: #E67136;
+    font-size: 30px;
+}
+
+.offer_item {
+    margin: 0 3%;
+}
+
+/*************************
+reward_area
+**************************/
+.reward_area {
+    width: 100%;
+    text-align: center;
+}
+
+.reward1_text {
+    background: #F5F4F4;
+    padding: 5%;
+}
+
+.reward1_text h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.reward1_text h1 span {
+    font-size: 40px;
+    color: #E67136;
+}
+
+.reward2_area {
+    background: #D9D9D9;
+    margin-top: -38px;
+}
+
+.reward2_text h1 {
+    padding: 20px 0;
+}
+
+.reward2_area img {
+    margin: auto;
+}
+
+
+/*************************
+tool_area
+**************************/
+.tool_area {
+    width: 100%;
+    text-align: center;
+}
+
+.tool_img {
+    width: 90%;
+    background: #506961;
+    border-radius: 25px;
+    padding: 4% 0;
+    margin: auto;
+}
+
+.tool_wel {
+    font-size: 25px;
+    padding: 0 0 3% 0;
+}
+.tool_wel {
+    font-size: 23px;
+  }
+/*************************
+fotter_area
+**************************/
+.fotter_area {
+    background: #506961;
+    height: 350px;
+    width: 100%;
+    position: relative;
+}
+
+.inner_fotter {
+    background: #fff;
+    height: 290px;
+    width: 75%;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 8%;
+}
+
+.fotter_item {
+    height: 35%;
+}
+
+.fotter_img {
+    width: 50%;
+    float: left;
+    padding-top: 5%;
+}
+
+.fotter_img img {
+    width: 90%;
+}
+
+.contact {
+    float: right;
+
+}
+
+.contact h3 {
+    color: #E67136;
+    margin: 0px;
+}
+
+.contact p {
+    margin: 4px;
+}
+
+.divider {
+    width: 1200px;
+    height: 1px;
+    background: #bbb;
+    float: right;
+}
+
+.fotter_text {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.fotter_icon ul {
+    padding: 0;
+    float: right;
+}
+
+.fotter_icon ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.fotter_icon ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.fotter_icon ul li a i {
+    color: #000;
+    font-size: 28px;
+    transition: 0.5s;
+}
+
+.fotter_icon ul li a i:hover {
+    color: #E67136;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+/*************************
+responsive
+*************************/
+
+/*****tab*******/
+@media (max-width: 1180px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .reward2_area img {
+        width: 90%;
+    }
+
+    .reward2_area .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 1100px) {
+    .show_text {
+        width: 40%;
+        margin: auto 5%;
+    }
+
+    .show_text h1 {
+        font-size: 25px;
+    }
+
+    .show_img {
+        width: 40%;
+        margin: auto 5%;
+    }
+}
+
+@media (max-width: 870px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .reward2_area .grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .fotter_text {
+        width: 60%;
+        float: none;
+        margin: auto;
+    }
+
+    .fotter_text p {
+        margin: 0;
+    }
+
+    .fotter_icon ul {
+        float: none;
+        text-align: center;
+    }
+
+    .fotter_icon ul li {
+        margin: auto 5px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .offer_text h1,
+    .reward2_text h1,
+    .tool_text h1 {
+        font-size: 25px;
+    }
+    .reward1_text h1 {
+        font-size: 25px;
+      }
+      .reward1_text h1 span {
+        font-size: 35px;
+      }
+}
+
+@media (max-width: 700px) {
+    .logo_area img {
+        width: 60%;
+    }
+
+    .benner_text h1 {
+        font-size: 35px;
+    }
+
+    .show_text {
+        width: 46%;
+        margin: auto 2%;
+    }
+
+    .show_text h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 635px) {
+    .fotter_text {
+        width: 90%;
+    }
+
+    .fotter_img {
+        padding-top: 7%;
+    }
+}
+
+/*****moblie*******/
+@media (max-width: 580px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+@media (max-width: 535px) {
+    .offer_text h1,
+    .reward2_text h1,
+    .tool_text h1 {
+        font-size: 23px;
+    }
+}
+@media (max-width: 500px) {
+    .benner_text {
+        width: 90%;
+    }
+
+    .benner_text h1 {
+        font-size: 25px;
+    }
+
+    .row {
+        flex-flow: column;
+    }
+
+    .show_text {
+        width: 80%;
+        margin: auto;
+    }
+
+    .show_img {
+        width: 80%;
+        margin: 5% auto 0;
+    }
+
+    .fotter_item {
+        height: 30%;
+    }
+
+    .fotter_img {
+        padding-top: 10%;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .offer_item {
+        margin: 0 10%;
+    }
+
+    .fotter_item {
+        height: 40%;
+        text-align: center;
+    }
+
+    .fotter_img {
+        width: 100%;
+        float: none;
+        padding-top: 2%;
+    }
+
+    .fotter_img img {
+        width: 70%;
+    }
+
+    .contact {
+        float: none;
+
+    }
+
+    .fotter_text {
+        width: 100%;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 330px) {
+    .reward1_text h1 {
+        font-size: 22px;
+      }
+      .reward1_text h1 span {
+        font-size: 25px;
+      }
+    .reward2_area .grid {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+
+    .inner_fotter {
+        width: 90%;
+        padding: 0;
+    }
+
+}
